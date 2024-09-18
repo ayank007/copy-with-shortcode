@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Copy With Shortcode",
+    "version": "1.0.0",
+    "description": "A basic chrome extension that stores shortcode.xml of your website and replace words with shortcode when you copy content from website",
+    "icons": {
+      "128": "images/icon-128.png"
+    },
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "images/icon-128.png"
+      }
+    },
+    "host_permissions": [
+      "https://*","http://*"
+    ],
+    "permissions": ["scripting", "activeTab","storage"]
+}
